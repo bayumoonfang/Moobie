@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_bottom"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="1dp"
+        android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_width="50dp"
+    android:id="@+id/cekme2"
+    android:padding="15dp"
+    android:layout_marginTop="4dp"
+android:translationZ="90dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:id="@+id/cekme"
+        android:src="@drawable/ic_deleteblack"
+        android:alpha=".7"
+        />
+
+</RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layOut2"
+            android:layout_marginLeft="15dp"
+            android:translationZ="80dp"
+            android:layout_toRightOf="@+id/cekme2">
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imagelistHome"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+
+            android:background="@drawable/circle_radius_orange">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="12dp"
+                android:id="@+id/txtDetailResumeQty"
+                android:fontFamily="@font/nunitobold"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                tools:ignore="DuplicateIds" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/idValList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+
+        <TextView
+            android:id="@+id/txtDetailResumeNamamenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_toRightOf="@id/imagelistHome"
+            android:text="Nasi Goreng Masak Matang"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:maxLength="21"
+            android:ems="10"/>
+
+
+
+        <TextView
+            android:id="@+id/txtDetailResumeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/txtDetailResumeNamamenu"
+            android:textSize="9dp"
+            android:alpha=".6"
+            android:fontFamily="@font/varelaround"
+            android:layout_toRightOf="@id/imagelistHome"
+            android:text="1 Pcs x 40.000 (Line DIscount: 10 %)"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:ems="18"/>
+
+
+
+
+        <TextView
+            android:id="@+id/txtDetailResumeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/varelaround"
+android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13dp"
+            android:text="3,500,000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtOrderNumber"
+    android:visibility="gone"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGraypol"
+        android:alpha=".4"
+        android:layout_below="@id/txtDetailResumeQty">
+
+    </LinearLayout>
+</LinearLayout>

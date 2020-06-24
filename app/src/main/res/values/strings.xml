@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">navigation Drawer Close</string>
+    <string name="cobaicon">fa_calendar_check_solid</string>
+
+
+</resources>

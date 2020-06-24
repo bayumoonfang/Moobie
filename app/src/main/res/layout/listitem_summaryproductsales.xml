@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorWhite"
+        android:background="@drawable/border_bottom">
+
+
+        <TextView
+            android:id="@+id/idValList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    android:visibility="gone"/>
+
+
+
+        <TextView
+            android:id="@+id/txtSummaryKodeProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="13dp"
+            android:alpha=".6"
+            android:fontFamily="@font/nunitobold"
+            android:text="9693 "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtSummaryNamaProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="13dp"
+            android:ems="9"
+            android:layout_toRightOf="@+id/txtSummaryKodeProduk"
+            android:fontFamily="@font/nunitobold"
+            android:text="Nasi Goreng Amerika dengan Saus Tomat"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtSummaryQtyProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="13dp"
+         android:layout_alignParentEnd="true"
+            android:fontFamily="@font/nunitobold"
+            android:text="12 Pcs"
+            android:layout_marginRight="25dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

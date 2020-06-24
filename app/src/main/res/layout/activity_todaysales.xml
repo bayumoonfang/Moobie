@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:backgroundTint="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layOut1"
+        android:background="@drawable/border_bottom"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Today Report"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+        </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/colorSilver"
+    android:id="@+id/layOut2"
+    android:layout_below="@id/layOut1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Sales"
+   android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:id="@+id/label1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 0"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtTotalSales"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorOrange2"
+        android:fontFamily="@font/varelaround"
+        android:layout_below="@+id/label1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Kamis, 20 Juni 2020)"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/label2"
+        android:textColor="@color/colorFullBlack"
+        android:fontFamily="@font/varelaround"
+        android:layout_below="@+id/txtTotalSales"/>
+
+
+
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@id/layOut3"
+    android:background="@drawable/border_bottom"
+    android:layout_below="@id/layOut2">
+
+    <EditText
+        android:id="@+id/txtCariDailySales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/layRecall1"
+        android:background="@drawable/rounded_edittext_abu2"
+        android:focusable="true"
+        android:fontFamily="@font/varelaround"
+        android:hint="Cari Order..."
+        android:padding="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="14dp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layRecall1"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgUp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_margin="18dp"
+                android:src="@drawable/ic_arrowup" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/layUp"
+            android:id="@+id/layDown">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_margin="18dp"
+                android:id="@+id/imgDown"
+                android:src="@drawable/ic_arrowdown" />
+        </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layOut3"
+        android:id="@+id/layLoading"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-20dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layOut3"
+        android:id="@+id/layKosong"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/varelaround"
+            android:text="Tidak ada transaksi.."/>
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layOut3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <com.example.moobie.Function.ExpandableHeightGridView
+                android:id="@+id/grid_dailysales"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:numColumns="1"
+                android:verticalSpacing="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="40dp"
+                android:clipToPadding="false"
+                android:stretchMode="columnWidth">
+
+            </com.example.moobie.Function.ExpandableHeightGridView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

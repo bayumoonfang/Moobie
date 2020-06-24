@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+
+    <ImageView
+        android:id="@+id/kampusImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_custblack"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txtNoCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kampusImage"
+        android:text="C/9999"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/opensansregular"
+        android:layout_marginTop="7dp"
+        android:ems="15"
+        android:maxLength="30"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorBlack"
+        android:textSize="10dp" />
+
+
+
+    <TextView
+        android:id="@+id/txtNamaCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kampusImage"
+        android:text="Ragil Bayu Respati"
+        android:layout_below="@+id/txtNoCustomer"
+        android:layout_marginLeft="15dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/varelaround"
+        android:ems="15"
+        android:maxLength="30"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorBlack"
+        />
+
+
+    <TextView
+        android:id="@+id/txtTelpCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kampusImage"
+        android:text="(0081938548797)"
+        android:layout_below="@+id/txtNamaCustomer"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/nunitobold"
+        android:ems="15"
+        android:maxLength="30"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorBlack"
+        android:textSize="9dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTelpCustomer"
+        android:layout_toRightOf="@id/kampusImage"
+        android:text="Jl Semampir Tengah III no 12 Surabaya"
+        android:textSize="9dp"
+        android:alpha=".6"
+        android:id="@+id/txtAlamatCustomer"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/colorFullBlack"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/txtIDCustomer" />
+
+
+
+</RelativeLayout>

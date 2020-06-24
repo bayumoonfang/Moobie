@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layOut1"
+        android:background="@drawable/border_bottom"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Cara Bayar"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut2"
+        android:padding="10dp"
+        android:layout_below="@id/layOut1"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txt1"
+            android:textColor="@color/colorBlack"></TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrowright"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut3"
+        android:padding="10dp"
+        android:layout_below="@id/layOut2"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txt2"
+            android:textColor="@color/colorBlack"></TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrowright"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut4"
+        android:padding="10dp"
+        android:layout_below="@id/layOut3"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txt7"
+            android:textColor="@color/colorBlack"></TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrowright"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

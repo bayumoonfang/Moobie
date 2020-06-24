@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.moobie"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    flavorDimensions "default"
+    productFlavors {
+        itconfig {
+            applicationId 'com.example.blackhack_machine.moobie'
+            minSdkVersion 19
+            targetSdkVersion 28
+            versionCode 1
+            versionName "1.0"
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha01'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'net.gotev:uploadservice:2.1'
+    implementation 'info.androidhive:fontawesome:0.0.5'
+    implementation 'com.willowtreeapps.spruce:spruce-android:1.0.1'
+    implementation 'com.emredavarci:noty:1.0.3'
+    implementation 'com.muddzdev:styleabletoast:2.2.3'
+    androidTestImplementation 'junit:junit:4.12'
+
+
+
+
+}

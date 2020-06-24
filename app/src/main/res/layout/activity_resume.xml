@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/home4">
+
+    </ImageView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/layTophome"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrowleft"
+            android:alpha="1"
+            android:id="@+id/backHome"
+           ></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TODAY REPORT"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunitobold"
+            android:layout_toRightOf="@+id/backHome"
+            android:layout_toLeftOf="@id/imgsett"
+            android:textStyle="bold"
+
+            android:id="@+id/txtHome"
+            android:gravity="center"></TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_settingwhite"
+     android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:alpha="1"
+            android:id="@+id/imgsett"
+            ></ImageView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/layTophome"
+        android:background="@drawable/shadow_round"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="20dp"
+        android:id= "@+id/layTop2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111111"
+            android:text="Senin , 23 Agustus 2019"
+            android:layout_marginLeft="15dp"
+            android:alpha=".6"
+            android:textSize="13dp"
+            android:fontFamily="@font/nunitobold"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txtDatehome"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:paddingRight="10dp"
+            android:textColor="#111111"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:alpha=".6"
+            android:textSize="13dp"
+            android:fontFamily="@font/nunitobold"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/txtDatehome"
+            android:id="@+id/txtsettDate"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#111111"
+            android:alpha=".4"
+            android:text="SUMMARY"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:fontFamily="@font/nunitobold"
+            android:layout_marginTop="60dp"
+            android:id="@+id/txt1"></TextView>
+
+<ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:id="@+id/loadPro3"
+    android:visibility="gone"
+    android:layout_below="@id/txt1"></ProgressBar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:textSize="34dp"
+            android:fontFamily="@font/nunitobold"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="-8dp"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/txtTotalhome"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTotalhome"
+            android:textSize="14dp"
+            android:alpha=".5"
+            android:fontFamily="@font/nunitobold"
+            android:textColor="#111111"
+            android:textStyle="bold"
+            android:text="(Total Sales Store)"
+            android:gravity="center"
+            android:layout_marginTop="-5dp"
+            android:id="@+id/txt2"></TextView>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="4.0dip"
+            android:paddingTop="5.0dip"
+            android:paddingRight="4.0dip"
+            android:paddingBottom="1.0dip"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2">
+
+            <Button
+                android:id="@+id/refreshHomebtn"
+
+                android:layout_width="0.0dip" android:layout_height="fill_parent"
+                android:text="Refresh"
+                android:layout_weight="1.0" />
+
+           <!-- <Button
+                android:id="@+id/deny"
+                android:layout_width="0.0dip" android:layout_height="fill_parent"
+                android:text="Detail"
+                android:layout_weight="1.0" />-->
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layTop2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/loading"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/loadingpro"
+            android:foregroundGravity="center"></ProgressBar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/txtnodata"
+            android:text="No Transaction"></TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/layTop2"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:id="@+id/layTop3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <com.example.moobie.Function.ExpandableHeightGridView
+                    android:id="@+id/gridPilihan2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numColumns="1"
+                    android:verticalSpacing="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="80dp"
+                    android:clipToPadding="false"
+                    android:stretchMode="columnWidth">
+
+                </com.example.moobie.Function.ExpandableHeightGridView>
+
+
+            </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

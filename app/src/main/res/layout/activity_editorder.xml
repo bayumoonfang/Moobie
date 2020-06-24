@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layOut1"
+        android:background="@drawable/border_bottom"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Edit Order"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/nunitobold"
+android:id="@+id/btnHapus"
+            android:layout_alignParentRight="true"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layOut1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/layOut2"
+            android:background="@drawable/border_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Menu"
+                android:textSize="13dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/txt11"
+                android:alpha=".7"
+                android:fontFamily="@font/varelaround"
+                android:textColor="@color/colorBlack"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ikan Bakar"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/txtNamaMenu"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/varelaround"
+                android:textColor="@color/colorBlack"></TextView>
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/layOut3"
+            android:layout_below="@+id/layOut2"
+            android:background="@drawable/border_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textSize="13dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/txt2"
+                android:fontFamily="@font/varelaround"
+                android:alpha=".7"
+                android:textColor="@color/colorBlack"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25.000"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/txtHarga"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/varelaround"
+                android:textColor="@color/colorBlack"></TextView>
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layOut4"
+            android:layout_below="@+id/layOut3"
+            android:background="@drawable/border_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catatan"
+                android:fontFamily="@font/varelaround"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt4"
+                android:alpha=".7"
+                android:textColor="@color/colorBlack"></TextView>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt4"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="50dp"
+                android:fontFamily="@font/varelaround"
+                android:layout_marginTop="5dp"
+                android:hint="Tulis Catatan..."
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:background="#00000000"
+                android:textColor="@color/colorFullBlack"
+android:id="@+id/txtCatatan"
+                android:layout_marginBottom="20dp"
+                ></EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/layOut4">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnKurang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:background="@drawable/radius_layoutblue2"
+                    android:text="-" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/btnTambah"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:inputType="number"
+                    android:layout_marginTop="-10dp"
+                    android:textColor="@color/colorFullBlack"
+
+                    android:layout_toRightOf="@+id/btnKurang"
+                    android:id="@+id/txtValJumlah"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                android:id="@+id/btnTambah"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:background="@drawable/radius_layoutblue2"
+
+                    android:layout_alignParentEnd="true"
+                    android:text="+"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

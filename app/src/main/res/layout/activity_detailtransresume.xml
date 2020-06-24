@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:backgroundTint="@color/colorWhite"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layOut1"
+        android:background="@drawable/border_bottom"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Detail Report"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtTitle"
+            android:textColor="@color/colorBlack"/>
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layOut1"
+        android:layout_marginTop="0dp"
+        android:translationZ="90dp"
+        android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut2"
+        android:padding="15dp"
+        android:layout_below="@+id/layOut1"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Number"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"
+            android:id="@+id/txt1"
+            android:alpha=".7"
+            android:textColor="@color/colorBlack"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textStyle="bold"
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtOrderNumber"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorBlack"></TextView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut3"
+        android:padding="15dp"
+        android:layout_below="@+id/layOut2"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Transaksi"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"
+            android:id="@+id/txt10"
+            android:alpha=".7"
+            android:textColor="@color/colorBlack"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textStyle="bold"
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtTglTransaksi"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorBlack"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut10"
+        android:layout_below="@+id/layOut3"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara Bayar"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"
+            android:id="@+id/txt2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:textColor="@color/colorBlack"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtCaraBayar"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorBlack"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Detail (Total)"
+            android:textSize="11dp"
+            android:layout_below="@+id/txt2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txt10a"
+            android:alpha=".7"
+            android:textColor="@color/colorBlack"></TextView>
+
+        <TextView
+            android:id="@+id/txt10b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt10a"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="3dp"
+            android:alpha=".7"
+            android:fontFamily="@font/varelaround"
+            android:text="Sub Total"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Charge"
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt10b"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10c"
+            android:alpha=".7"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tax (PPn)"
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt10c"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10ff"
+            android:alpha=".7"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Transaction"
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/txt10ff"
+        android:layout_marginTop="3dp"
+        android:id="@+id/txt10gg"
+        android:paddingBottom="10dp"
+            android:alpha=".7"
+        android:textColor="@color/colorBlack">
+    </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:alpha=".7"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt10a"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/textView11"
+          >
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:textColor="@color/colorFullBlack"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/textView12"
+            android:alpha=".7">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/textView13"
+            android:textColor="@color/colorFullBlack"
+            android:alpha=".7">
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="11dp"
+            android:fontFamily="@font/varelaround"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/textView14"
+            android:textColor="@color/colorFullBlack">
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut5"
+        android:background="@drawable/border_bottom"
+        android:layout_below="@+id/layOut10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Produk"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_marginTop="14dp"
+            android:id="@+id/txt12"
+            android:textColor="@color/colorBlack"></TextView>
+
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt12"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/load1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"></ProgressBar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/txt12"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:paddingBottom="10dp"
+            android:id="@+id/layTop3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.moobie.Function.ExpandableHeightGridView
+                    android:id="@+id/gridPilihan3"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numColumns="1"
+                    android:verticalSpacing="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:clipToPadding="false"
+                    android:stretchMode="columnWidth">
+
+                </com.example.moobie.Function.ExpandableHeightGridView>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut6"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/layOut5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi Pembeli"
+            android:textSize="13dp"
+            android:fontFamily="@font/varelaround"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/txt13"
+            android:textColor="@color/colorBlack"></TextView>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt14"
+    android:layout_below="@+id/txt13"
+    android:text="Kode Customer"
+    android:layout_marginLeft="20dp"
+    android:textColor="@color/colorBlack"
+    android:alpha=".7"
+    android:fontFamily="@font/varelaround"
+    android:textSize="11dp"
+    android:layout_marginTop="10dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt17"
+            android:layout_below="@+id/txt14"
+            android:text="Nama Customer"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt18"
+            android:layout_below="@+id/txt17"
+            android:text="No. Customer"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt19"
+            android:layout_below="@+id/txt18"
+            android:text="Alamat Customer"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailResumeCustid"
+            android:layout_below="@+id/txt13"
+            android:layout_toRightOf="@+id/txt14"
+            android:text="..."
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailResumeCustnama"
+            android:layout_below="@+id/txtDetailResumeCustid"
+            android:layout_toRightOf="@+id/txt14"
+            android:text="..."
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailResumeCustphone"
+            android:layout_below="@+id/txtDetailResumeCustnama"
+            android:layout_toRightOf="@+id/txt14"
+            android:text="..."
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailResumeCustaddress"
+            android:layout_below="@+id/txtDetailResumeCustphone"
+            android:layout_toRightOf="@+id/txt14"
+            android:text="..."
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:ems="15"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/varelaround"
+            android:textSize="11dp"/>
+
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+
+                android:src="@drawable/ic_sharewhite"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:padding="18dp"
+                android:layout_width="60dp"
+                android:background="@drawable/circle_radius_2"
+                android:id="@+id/btnShare"
+                android:layout_height="60dp"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/layOut6" />
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

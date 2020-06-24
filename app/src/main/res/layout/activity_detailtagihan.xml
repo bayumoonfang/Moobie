@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layOut1"
+        android:background="@drawable/border_bottom"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Detail Tagihan"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut11"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/layOut1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringkasan Belanja"
+            android:fontFamily="@font/varelaround"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/txt1a"
+            android:textColor="@color/colorBlack"></TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Total"
+            android:fontFamily="@font/varelaround"
+            android:textSize="12dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt1a"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10b"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Charge"
+            android:fontFamily="@font/varelaround"
+            android:textSize="12dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt10b"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10c"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tax (PPn)"
+            android:textSize="12dp"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txt10c"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10d"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="12dp"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txt10d"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10e"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12dp"
+            android:fontFamily="@font/varelaround"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt1a"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/valSubTotal"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/valSubTotal"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/valServiceCharge"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/valServiceCharge"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/valTax"
+            android:textColor="@color/colorFullBlack">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/valTax"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/valTotal"
+            android:textColor="@color/colorFullBlack">
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

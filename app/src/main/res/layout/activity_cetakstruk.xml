@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_closeblack"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imgClose"
+        android:padding="5dp"
+        android:alpha=".8"
+        android:layout_margin="15dp"/>
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:id="@+id/imgTop"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:alpha=".8"
+        android:src="@drawable/succsess2"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgTop"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/varelaround"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/txt2"
+        android:text="Transaksi Berhasil"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:id="@+id/txt3"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/varelaround"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/layOut2"
+        android:layout_below="@+id/txt3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtl1"
+            android:alpha=".7"
+            android:textColor="@color/colorFullBlack"
+            android:text="No. Transaksi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtr1"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorFullBlack"
+            android:text="SO-20-0000004"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtl2"
+            android:layout_below="@id/txtl1"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:textColor="@color/colorFullBlack"
+            android:text="Cara Bayar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtr2"
+            android:layout_below="@+id/txtr1"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorFullBlack"
+            android:text="Tunai"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtl3"
+            android:layout_below="@id/txtl2"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:textColor="@color/colorFullBlack"
+            android:text="Tagihan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtr3"
+            android:layout_below="@+id/txtr2"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorFullBlack"
+            android:text="Rp 23.000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtl4"
+            android:layout_below="@id/txtl3"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:textColor="@color/colorFullBlack"
+            android:text="Dibayarkan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtr4"
+            android:layout_below="@+id/txtr3"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorFullBlack"
+            android:text="Rp 25.000"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtl5"
+            android:layout_below="@id/txtl4"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:textColor="@color/colorFullBlack"
+            android:text="Kembalian"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtr5"
+            android:layout_below="@+id/txtr4"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorFullBlack"
+            android:text="Rp 2.000"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layOut3"
+
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="Cetak Struk"
+            android:fontFamily="@font/nunitobold"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Simpan Struk"
+            android:fontFamily="@font/nunitobold"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layOut3"
+        android:text="Mulai Jualan Lagi"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_layoutblue2"
+        android:fontFamily="@font/nunitobold"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnJualan"
+        android:textAllCaps="false"/>
+    </RelativeLayout>
+
+</RelativeLayout>

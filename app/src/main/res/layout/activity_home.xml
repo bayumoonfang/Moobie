@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/topBanget"
+
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:id="@+id/topLayout1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgList"
+                    android:text="Toko Dua Kata"
+                    android:fontFamily="@font/nunitobold"
+                    android:padding="5dp"
+                    android:textSize="18dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorFullBlack"
+                    android:id="@+id/txtNamaToko"
+                    android:alpha=".8"></TextView>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topBanget"
+            android:layout_marginTop="59dp"
+            android:background="@drawable/border_bottom">
+
+            <ImageView
+                android:id="@+id/imgBag"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_shopbagblack"></ImageView>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/imgBag"
+                android:fontFamily="@font/quicksand"
+                android:text="Total Sales"
+                android:textColor="@color/colorFullBlack"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/txtDateMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/imgBag"
+                android:fontFamily="@font/nunitobold"
+                android:text="12-02-2020"
+                android:alpha=".8"
+                android:textColor="@color/colorFullBlack"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/txtNetsales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="55dp"
+                android:alpha=".9"
+                android:fontFamily="@font/nunitobold"
+                android:text="0"
+                android:textColor="@color/colorFullBlack"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_arrowright"
+                android:layout_marginTop="18dp"
+                android:padding="1dp"
+                android:id="@+id/imgArrow"
+                android:layout_marginRight="15dp"
+                android:alpha=".5"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/customgrid"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:layout_below="@+id/topBanget"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:foregroundGravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:verticalSpacing="15dp"
+            android:layout_marginRight="10dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mulai Berjualan"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/btnDaftar"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnJualan"
+            android:fontFamily="@font/nunitobold"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/radius_layoutblue2"
+            android:layout_marginRight="20dp"></Button>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_home"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_layouttop"
+        android:layout_gravity="start"/>
+
+<!--
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_bottom"
+        android:id="@+id/layTop1"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/imgList"
+            android:src="@drawable/ic_menulist"
+            ></ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgList"
+            android:text="Toko Dua Kata"
+            android:fontFamily="@font/nunitobold"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtNamaToko"
+            android:alpha=".8"></TextView>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/customgrid"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_below="@+id/layTop1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:foregroundGravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:verticalSpacing="15dp"
+        android:layout_marginRight="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mulai Berjualan"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/btnDaftar"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnMasuk"
+        android:fontFamily="@font/nunitobold"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorMyBlue"
+        android:layout_marginRight="20dp"></Button>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_home"
+        android:id="@+id/nav_home"
+      >
+
+    </com.google.android.material.navigation.NavigationView>-->
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+

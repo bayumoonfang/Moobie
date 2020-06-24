@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorGraypol"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:translationZ="1dp"
+        android:id="@+id/layoutLoading"
+        android:visibility="gone"
+        android:elevation="10dp">
+
+            <ProgressBar
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/progress_color">
+
+            </ProgressBar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_bottom"
+        android:id="@+id/topLayout1"
+        android:elevation="4dp"
+        android:layout_height="60dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_arrowback_black"
+            android:layout_margin="21dp"
+            android:id="@+id/imgBack"
+            />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Tambah Produk"
+            android:layout_margin="16dp"
+
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:id="@+id/topLayout2"
+        android:layout_below="@+id/topLayout1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/separator"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/separator"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imgcard"
+android:background="@drawable/edittext_fullborder_radius"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/noimage"
+                android:id="@+id/imgUpload"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_photo"
+            android:layout_toRightOf="@+id/imgcard"
+            android:layout_below="@+id/imgcard"
+            android:layout_marginTop="-25dp"
+            android:layout_marginLeft="-22dp"
+            android:elevation="@dimen/cardview_default_elevation"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Produk"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/imgcard"
+            android:layout_marginLeft="34dp"
+            android:id="@+id/txtLabel1"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginBottom="6dp"
+            android:alpha=".4"
+            android:textColor="@color/colorFullBlack"
+            android:textStyle="bold"
+            android:textSize="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edittext_fullborder_radius"
+            android:padding="15dp"
+            android:layout_below="@+id/txtLabel1"
+            android:textSize="15dp"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtNamaProduk"
+            android:layout_marginRight="30dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori Produk"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txtNamaProduk"
+            android:layout_marginLeft="34dp"
+            android:id="@+id/txtLabel2"
+            android:layout_marginBottom="6dp"
+            android:alpha=".4"
+            android:textColor="@color/colorFullBlack"
+            android:textStyle="bold"
+            android:textSize="10dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLabel2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="16dp"
+            android:id="@+id/spinnerkategori"
+            android:background="@drawable/edittext_fullborder_radius"
+            style="@style/mySpinnerItemStyle"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satuan Produk"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/spinnerkategori"
+            android:layout_marginLeft="34dp"
+            android:id="@+id/txtLabel3"
+            android:layout_marginBottom="6dp"
+            android:alpha=".4"
+            android:textColor="@color/colorFullBlack"
+            android:textStyle="bold"
+            android:textSize="10dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLabel3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="16dp"
+            android:id="@+id/spinnersatuan"
+            android:background="@drawable/edittext_fullborder_radius"
+            style="@style/mySpinnerItemStyle"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga Produk"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/spinnersatuan"
+            android:layout_marginLeft="34dp"
+            android:id="@+id/txtLabel4"
+            android:layout_marginBottom="6dp"
+            android:alpha=".4"
+            android:textColor="@color/colorFullBlack"
+            android:textStyle="bold"
+            android:textSize="10dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edittext_fullborder_radius"
+            android:padding="15dp"
+            android:layout_below="@+id/txtLabel4"
+            android:textSize="15dp"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtHargaProduk"
+            android:inputType="number"
+
+            android:layout_marginRight="30dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtHargaProduk"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtValKategori"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtValSatuan"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/topLayout2">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_below="@+id/txtServer"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnSimpanAddProduk"
+            android:fontFamily="@font/nunitobold"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/radius_layoutblue"
+
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

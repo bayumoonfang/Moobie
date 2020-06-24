@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+
+    <ImageView
+        android:id="@+id/kampusImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_billblack" />
+
+    <TextView
+        android:id="@+id/txtOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/kampusImage"
+        android:ems="8"
+        android:fontFamily="@font/varelaround"
+        android:maxLength="30"
+        android:text="SO-20-0000012"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 50.000"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/varelaround"
+        android:maxLength="30"
+        android:textStyle="bold"
+        android:id="@+id/txtTotal"
+        android:textColor="@color/colorBlack"
+        android:layout_marginRight="15dp"
+        android:textSize="12dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderNumber"
+        android:layout_toRightOf="@id/kampusImage"
+        android:text="Cash"
+        android:textSize="11dp"
+        android:id="@+id/txtCaraBayar"
+        android:alpha=".7"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"
+        android:layout_marginLeft="10dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderNumber"
+        android:text="19.00"
+        android:textSize="11dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/txtJam"
+        android:alpha=".7"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"
+        android:layout_marginLeft="10dp"></TextView>
+
+
+
+
+</RelativeLayout>

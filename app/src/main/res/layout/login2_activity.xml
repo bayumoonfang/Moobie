@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut1"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrowback_black"
+            android:padding="10dp"
+            android:alpha=".8"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnBack"
+            android:layout_marginLeft="10dp"></ImageView>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:id="@+id/imgLogo"
+        android:src="@drawable/c"></ImageView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/imgLogo">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/edittext_fullborder"
+            android:padding="10dp"
+            android:hint="Username"
+            android:textStyle="bold"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtUsername"
+            android:fontFamily="@font/quicksand"
+            android:layout_marginRight="40dp"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/edittext_fullborder"
+            android:padding="10dp"
+            android:hint="Password"
+            android:id="@+id/txtPassword"
+            android:textStyle="bold"
+            android:textColor="@color/colorFullBlack"
+            android:password="true"
+            android:layout_below="@id/txtUsername"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand"
+            android:layout_marginRight="40dp"></EditText>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/edittext_fullborder"
+            android:padding="10dp"
+            android:hint="Server"
+            android:id="@+id/txtServer"
+            android:textStyle="bold"
+            android:textColor="@color/colorFullBlack"
+            android:layout_below="@id/txtPassword"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand"
+            android:layout_marginRight="40dp"></EditText>
+
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:layout_below="@+id/txtServer"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnMasuk"
+            android:fontFamily="@font/nunitobold"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorMyBlue"
+            android:layout_marginRight="40dp"></Button>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versi.2.1.3-build.5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="10dp"
+        android:layout_marginBottom="15dp"></TextView>
+
+</RelativeLayout>

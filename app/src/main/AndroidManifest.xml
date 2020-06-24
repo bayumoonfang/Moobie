@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.moobie">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Moobie"
+        tools:replace="android:label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppThemeRegist">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Report.DailyReportActivity"
+            android:theme="@style/AppThemeRegist" />
+
+
+        <activity
+        android:name=".LoginActivity"
+        android:theme="@style/AppThemeLogin" />
+
+
+        <activity
+            android:name=".Index.LoginActivity2"
+            android:theme="@style/AppThemeRegist" />
+
+        <activity
+            android:name=".Home.ResumeActivity"
+            android:theme="@style/AppThemeRegist" />
+
+
+        <activity
+            android:name=".Index.IndexActivity"
+            android:theme="@style/AppThemeRegist" />
+
+
+
+
+        <activity
+            android:name=".Home.DetailSaleStoreActivity"
+            android:theme="@style/AppThemeLogin" />
+
+
+        <activity
+            android:name=".Report.DetailTransaksiResumeActivity"
+            android:theme="@style/AppThemeLogin" />
+
+
+        <activity
+            android:name=".Home.SearchTransActivity"
+            android:theme="@style/AppThemeLogin" />
+
+      <!--  <activity
+            android:name=".SplashScreen"
+            android:theme="@style/ThemeFullScreen"/>-->
+        <activity
+            android:name=".Home.HomeActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Outlet.OutletActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Customer.CustomerActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Customer.AddCustomer"
+            android:theme="@style/AppThemeRegist"/>
+
+
+        <activity
+            android:name=".Customer.EditCustomer"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Produk.AddProdukActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Outlet.AddOutletActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Outlet.EditOutletActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.JualanActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+
+        <activity
+            android:name=".Produk.EditProduk"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.EditOrderActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.PembayaranActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.DetailTagihanActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.CustomerOrderActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.CaraBayarActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.CaraBayarBankActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+
+         <activity
+           android:name=".Jualan.CetakStrukActivity"
+           android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.PreviewStrukActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Produk.ProdukActivity"
+            android:theme="@style/AppThemeRegist"/>
+
+        <activity
+            android:name=".Jualan.CheckoutActivity"
+            android:theme="@style/AppThemeRegist"/>
+        <!--
+
+
+                    <activity
+                        android:name=".Produk.ProdukActivity"
+                        android:theme="@style/AppThemeRegist" />
+
+
+                    <activity
+                        android:name=".Home.HomeActivity"
+                        android:theme="@style/AppTheme" />-->
+    </application>
+
+</manifest>

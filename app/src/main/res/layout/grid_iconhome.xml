@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:background="@drawable/radius_layout"
+    android:layout_height="wrap_content"
+android:elevation="5dp"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/os_images"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle_radius_2"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_below="@+id/os_images"
+        android:id="@+id/os_texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Undangan"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/varelaround"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorFullBlack" />
+
+    <TextView
+        android:layout_below="@+id/os_texts"
+        android:id="@+id/os_texts2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Undangan"
+        android:fontFamily="@font/varelaround"
+        android:textSize="10dp"
+        android:alpha=".6"
+        android:textColor="@color/colorFullBlack"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

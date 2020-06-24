@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layOut1"
+        android:background="@drawable/border_bottom"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Transfer"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut2"
+        android:padding="10dp"
+        android:layout_below="@id/layOut1"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/varelaround"
+            android:textStyle="bold"
+            android:id="@+id/txt1"
+            android:textColor="@color/colorBlack"></TextView>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:fontFamily="@font/varelaround"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/spinner1"
+            android:textSize="12dp"
+            android:layout_marginLeft="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut3"
+        android:padding="10dp"
+        android:layout_below="@id/layOut2"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card / Bank Number"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/varelaround"
+            android:textStyle="bold"
+            android:id="@+id/txt2"
+            android:textColor="@color/colorBlack"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_marginTop="5dp"
+            android:hint="Type Card or Bank Account Number..."
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:background="#00000000"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtCatatan"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

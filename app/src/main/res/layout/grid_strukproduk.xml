@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nasi Goreng Amerika dengan Saus Tomat"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"
+        android:id="@+id/txtNamaMenu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="25.000"
+    android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:id="@+id/txtHargaMenu"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 x 25.000"
+        android:textSize="9dp"
+        android:layout_marginLeft="10dp"
+        android:alpha=".6"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"
+        android:layout_below="@id/txtNamaMenu"
+        android:id="@+id/txtDetailMenu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ga Pake Gula"
+        android:textSize="9dp"
+        android:layout_marginLeft="10dp"
+        android:alpha=".6"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"
+        android:layout_below="@id/txtDetailMenu"
+        android:id="@+id/txtCommentMenu"/>
+
+
+</RelativeLayout>

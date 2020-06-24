@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layOut1"
+        android:background="@drawable/border_bottom"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Preview"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:id="@+id/layPrint"
+        android:layout_below="@id/layOut1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="TOKO MOOBI"
+            android:fontFamily="@font/varelaround"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/txtNamaToko"
+            android:textColor="@color/colorFullBlack"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Jln Nginden Semolo 3 Surabaya"
+            android:fontFamily="@font/varelaround"
+            android:textSize="12dp"
+            android:alpha=".6"
+            android:id="@+id/txtAlamatToko"
+            android:layout_below="@id/txtNamaToko"
+            android:textColor="@color/colorFullBlack"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/txtAlamatToko"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dotted_line"
+            android:layout_marginLeft="25dp"
+            android:alpha=".6"
+            android:id="@+id/separator1"
+            android:layout_marginRight="25dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="No. Faktur  "
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/separator1"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:id="@+id/txtlabel1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="SO-20-0000034"
+            android:fontFamily="@font/varelaround"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/separator1"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtNoFaktur"
+            android:textSize="14dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Tanggal"
+            android:layout_below="@+id/txtlabel1"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="23-Juni-2020"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtNoFaktur"
+            android:id="@+id/txtTanggalFaktur"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Customer"
+            android:layout_below="@+id/txtlabel2"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="C/9999 - Ragil Bayu Respati"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtTanggalFaktur"
+            android:id="@+id/txtCustomerFaktur"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Cara Bayar"
+            android:layout_below="@+id/txtlabel3"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel33"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Tunai"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtlabel3"
+            android:id="@+id/txtCaraBayarFaktur"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/txtCaraBayarFaktur"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dotted_line"
+            android:layout_marginLeft="25dp"
+            android:alpha=".6"
+            android:id="@+id/separator2"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/separator2"
+            android:fontFamily="@font/varelaround"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:id="@+id/txt22"
+            android:textColor="@color/colorFullBlack"
+            android:text="Order Detail"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/txt22"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dotted_line"
+            android:layout_marginLeft="25dp"
+            android:alpha=".6"
+            android:id="@+id/separator3"
+            android:layout_marginRight="25dp"/>
+
+
+
+        <com.example.moobie.Function.ExpandableHeightGridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/gridStruk"
+            android:layout_below="@+id/separator3"
+            android:layout_marginTop="10dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/gridStruk"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dotted_line"
+            android:layout_marginLeft="25dp"
+            android:alpha=".6"
+            android:id="@+id/separator4"
+            android:layout_marginRight="25dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Sub Total"
+            android:layout_below="@+id/separator4"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel4"/>
+
+
+        <TextView
+            android:id="@+id/txtSubTotalFaktur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/varelaround"
+            android:text="0"
+            android:ems="10"
+            android:gravity="right"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Tax"
+            android:layout_below="@+id/txtlabel4"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtlabel4"
+            android:id="@+id/txtTaxFaktur"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="right"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Service Charge"
+            android:layout_below="@+id/txtlabel5"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtlabel5"
+            android:id="@+id/txtServchargeFaktur"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="right"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Total"
+            android:layout_below="@+id/txtlabel6"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorFullBlack"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtlabel6"
+            android:id="@+id/txtTotalFaktur"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorFullBlack"
+            android:ems="10"
+            android:gravity="right"
+            android:textSize="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/txtTotalFaktur"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dotted_line"
+            android:layout_marginLeft="25dp"
+            android:alpha=".6"
+            android:id="@+id/separator6"
+            android:layout_marginRight="25dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Bayar"
+            android:layout_below="@+id/separator6"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/separator6"
+            android:id="@+id/txtBayarFaktur"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="right"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Kembalian"
+            android:layout_below="@+id/txtlabel8"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varelaround"
+            android:id="@+id/txtlabel9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtlabel8"
+            android:id="@+id/txtKembalianFaktur"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="right"
+            android:textSize="14dp"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_below="@+id/txtKembalianFaktur"
+    android:layout_height="30dp"/>
+    </RelativeLayout>
+
+
+    <ImageView
+
+        android:src="@drawable/ic_sharewhite"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="35dp"
+        android:padding="18dp"
+        android:elevation="9dp"
+        android:layout_width="60dp"
+        android:background="@drawable/circle_radius_2"
+        android:id="@+id/btnShare"
+        android:layout_height="60dp"/>
+
+
+
+</RelativeLayout>

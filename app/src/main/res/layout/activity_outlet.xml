@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_bottom"
+        android:id="@+id/topLayout1"
+        android:elevation="3dp"
+        android:layout_height="60dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Outlet Saya"
+            android:layout_margin="18dp"
+
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="13dp"
+            android:visibility="gone"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="Cari Produk.."
+            android:textSize="15dp"
+            android:background="@drawable/btm_borderedittext"
+            android:id="@+id/txtSearch"
+            ></EditText>
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_clearblack"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/imgClear"
+            android:visibility="gone"
+            ></ImageView>
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout1"
+        android:background="@drawable/border_bottom"
+        android:padding="10dp"
+        android:id="@+id/topLayout2">
+
+  <EditText
+      android:layout_width="match_parent"
+     android:layout_toLeftOf="@+id/searchimg"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/robotoregular"
+      android:textSize="14dp"
+      android:layout_marginLeft="20dp"
+      android:id="@+id/txtCari"
+      android:background="@drawable/btm_borderedittext"
+      android:hint="Cari Outlet.."/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_searchblack"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/searchimg"
+  android:layout_alignParentRight="true"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Data Found"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorFullBlack"
+            android:fontFamily="@font/nunitobold"
+            android:textSize="18dp"
+            android:layout_marginTop="-10dp"
+            android:alpha=".7"
+            android:visibility="gone"
+            android:id="@+id/txtKosong"
+            android:layout_centerHorizontal="true">
+
+        </TextView>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="270dp"
+            android:id="@+id/loadingBar"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/loadbaru"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <com.example.moobie.Function.ExpandableHeightGridView
+                android:id="@+id/grid_outlethome"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:numColumns="1"
+                android:verticalSpacing="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="40dp"
+                android:clipToPadding="false"
+                android:stretchMode="columnWidth">
+
+            </com.example.moobie.Function.ExpandableHeightGridView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <ImageView
+
+        android:src="@drawable/ic_addwhite"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:padding="18dp"
+        android:elevation="9dp"
+        android:layout_width="60dp"
+        android:background="@drawable/circle_radius"
+        android:id="@+id/btnAddOutlet"
+        android:layout_height="60dp"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:backgroundTint="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layOut1"
+
+        android:background="@drawable/border_bottom"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Ringkasan Order"
+            android:layout_margin="16dp"
+
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/layDelete"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:padding="5dp"
+                android:textSize="13dp"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/nunitobold"
+                android:textAllCaps="false"
+                android:id="@+id/btnDelete"
+                android:text="Clear"/>
+        </RelativeLayout>
+
+
+<!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/nunitobold"
+
+            android:layout_alignParentRight="true"/>-->
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layOut1"
+        android:layout_marginBottom="102dp"
+        android:id="@+id/layLoading"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-20dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layOut1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <com.example.moobie.Function.ExpandableHeightGridView
+                android:id="@+id/gridPilihan3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:numColumns="1"
+                android:verticalSpacing="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="180dp"
+                android:clipToPadding="false"
+
+                android:stretchMode="columnWidth">
+
+            </com.example.moobie.Function.ExpandableHeightGridView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:elevation="80dp"
+                android:translationZ="75dp"
+                android:id="@+id/layBawah"
+                android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:alpha=".6"
+                android:background="@drawable/top_shadow"/>
+
+
+<View
+    android:layout_width="match_parent"
+    android:id="@+id/separator1"
+    android:layout_height="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Total"
+                    android:fontFamily="@font/varelaround"
+                    android:textSize="12dp"
+                    android:alpha=".6"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@+id/separator1"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt10b"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Charge"
+                    android:fontFamily="@font/varelaround"
+                    android:textSize="12dp"
+                    android:alpha=".6"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@+id/txt10b"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/txt10c"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax (PPn)"
+                    android:textSize="12dp"
+                    android:alpha=".6"
+                    android:layout_marginLeft="35dp"
+                    android:fontFamily="@font/varelaround"
+                    android:layout_below="@+id/txt10c"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/txt10d"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/varelaround"
+                    android:textStyle="bold"
+                    android:alpha=".6"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@+id/separator1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/valSubTotal"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"
+                    android:fontFamily="@font/varelaround"
+                    android:layout_below="@+id/valSubTotal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="3dp"
+                    android:alpha=".6"
+                    android:id="@+id/valServiceCharge"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"
+                    android:fontFamily="@font/varelaround"
+                    android:layout_below="@+id/valServiceCharge"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/valTax"
+                    android:alpha=".6"
+                    android:textColor="@color/colorFullBlack">
+                </TextView>
+
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitobold"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorFullBlack"
+                android:textStyle="bold"
+                    android:layout_below="@+id/valTax"
+                android:id="@+id/txtJumlah1"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginLeft="31dp"
+                android:text="Total"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitobold"
+                    android:textSize="15dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorFullBlack"
+                    android:textStyle="bold"
+                    android:id="@+id/txtTotal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/valTax"
+                    android:text="0"></TextView>
+
+                <Button
+                    android:id="@+id/btnBayar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTotal"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius_layoutblue2"
+                    android:fontFamily="@font/nunitobold"
+                    android:text="Lanjutkan Pembayaran"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+          <!--  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layOut11"
+                android:layout_below="@+id/separation2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ringkasan Belanja"
+                    android:fontFamily="@font/varelaround"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/txt1a"
+                    android:textColor="@color/colorBlack"></TextView>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Total"
+                    android:fontFamily="@font/varelaround"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@+id/txt1a"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/txt10b"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Charge"
+                    android:fontFamily="@font/varelaround"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@+id/txt10b"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/txt10c"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax (PPn)"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="35dp"
+                    android:fontFamily="@font/varelaround"
+                    android:layout_below="@+id/txt10c"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/txt10d"
+                    android:paddingBottom="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/varelaround"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@+id/txt1a"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/valSubTotal"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"
+                    android:fontFamily="@font/varelaround"
+                    android:layout_below="@+id/valSubTotal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/valServiceCharge"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"
+                    android:fontFamily="@font/varelaround"
+                    android:layout_below="@+id/valServiceCharge"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/valTax"
+                    android:textColor="@color/colorFullBlack">
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorGraypol"
+                android:alpha=".7"
+                android:id="@+id/separation3"
+                android:layout_below="@+id/layOut11"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separation3">
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Tagihan"
+                        android:fontFamily="@font/varelaround"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="18dp"
+                        android:id="@+id/txt2a"
+                        android:textColor="@color/colorBlack"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp.12.000"
+                        android:fontFamily="@font/nunitobold"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/valTotalBelanja"
+                        android:layout_below="@+id/txt2a"
+                        android:textColor="@color/colorMyBlue"></TextView>
+
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentRight="true">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@color/colorWhite"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:backgroundTint="@color/colorMyBlue"
+                        android:text="Pilih Pembayaran"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>-->
+
+
+
+
+<!--
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut10"
+        android:layout_below="@+id/layOut4"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Detail (Total)"
+            android:textSize="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txt10a"
+            android:fontFamily="@font/varelaround"
+            android:alpha=".7"
+            android:textColor="@color/colorBlack"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:fontFamily="@font/varelaround"
+            android:textSize="13dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt10a"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10b"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tax (PPn)"
+            android:fontFamily="@font/varelaround"
+            android:textSize="13dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt10b"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10c"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Transaction"
+            android:textSize="13dp"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txt10c"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txt10d"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150,000,000"
+            android:textSize="13dp"
+            android:fontFamily="@font/varelaround"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/txt10a"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txtDetailResumeTransAmount"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250,000"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtDetailResumeTransAmount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txtDetailResumeTransTax"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,250,000"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/varelaround"
+            android:layout_below="@+id/txtDetailResumeTransTax"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txtDetailResumeTransTotal"
+            android:textColor="@color/colorBlue">
+        </TextView>
+
+
+    </RelativeLayout>-->
+
+
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut5"
+        android:layout_below="@+id/layOut10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Produk"
+            android:fontFamily="@font/varelaround"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/txt12"
+            android:textColor="@color/colorBlack"></TextView>
+
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt12"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/load1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"></ProgressBar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/txt12"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:paddingBottom="10dp"
+            android:id="@+id/layTop3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.moobie.Function.ExpandableHeightGridView
+                    android:id="@+id/gridPilihan3"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numColumns="1"
+                    android:verticalSpacing="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:clipToPadding="false"
+                    android:stretchMode="columnWidth">
+
+                </com.example.moobie.Function.ExpandableHeightGridView>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>-->
+
+
+
+<!--
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layOut6"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/layOut5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi Pembeli"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/txt13"
+            android:textColor="@color/colorBlack"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt14"
+            android:layout_below="@+id/txt13"
+            android:text="Kode Customer"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:layout_marginTop="10dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt17"
+            android:layout_below="@+id/txt14"
+            android:text="Nama Customer"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"></TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt18"
+            android:layout_below="@+id/txt17"
+            android:text="No. Customer"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:layout_marginTop="10dp"></TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt19"
+            android:layout_below="@+id/txt18"
+            android:text="Alamat Customer"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:layout_marginTop="10dp"></TextView>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailResumeCustid"
+            android:layout_below="@+id/txt13"
+            android:layout_toRightOf="@+id/txt14"
+            android:text="KI/87612"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"></TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailResumeCustnama"
+            android:layout_below="@+id/txtDetailResumeCustid"
+            android:layout_toRightOf="@+id/txt14"
+            android:text="Ragil Bayu Respati"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailResumeCustphone"
+            android:layout_below="@+id/txtDetailResumeCustnama"
+            android:layout_toRightOf="@+id/txt14"
+            android:text="081938548797"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailResumeCustaddress"
+            android:layout_below="@+id/txtDetailResumeCustphone"
+            android:layout_toRightOf="@+id/txt14"
+            android:text="WONOREJO PERMAI SELATAN III CC-223 A"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:ems="15"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"></TextView>
+
+    </RelativeLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorWhite"
+        android:background="@drawable/border_bottom">
+
+
+        <ImageView
+            android:layout_marginLeft = "20dp"
+            android:layout_marginRight = "25dp"
+            android:layout_marginTop = "20dp"
+            android:id="@+id/imagelistHome"
+            android:layout_width="36dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_storeblue"></ImageView>
+
+        <TextView
+            android:id="@+id/storenameHome"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imagelistHome"
+            android:ems="15"
+            android:fontFamily="@font/nunitobold"
+            android:text="KERTAJAYA INDAH"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/idValList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    android:visibility="gone"/>
+
+
+
+        <TextView
+            android:id="@+id/storeinfoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/storenameHome"
+            android:textSize="10dp"
+            android:alpha=".6"
+            android:fontFamily="@font/nunitobold"
+            android:layout_toRightOf="@id/imagelistHome"
+            android:text="Jl Abdul Muis no 3 Surabaya"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:ems="15"/>
+
+
+        <TextView
+            android:id="@+id/storsalesHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/storeinfoHome"
+            android:textSize="24dp"
+            android:fontFamily="@font/nunitobold"
+            android:layout_toRightOf="@id/imagelistHome"
+            android:text="3,500,000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="10dp"
+            android:ems="15"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

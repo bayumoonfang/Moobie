@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:background="@drawable/border_bottom">
+
+
+        <ImageView
+            android:layout_marginLeft = "20dp"
+            android:layout_marginRight = "15dp"
+            android:layout_marginTop = "20dp"
+            android:id="@+id/imagelistHome"
+            android:layout_width="44dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_shopproduct"></ImageView>
+
+
+        <TextView
+            android:id="@+id/idValList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+
+        <TextView
+            android:id="@+id/txtDetailResumeNamamenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/nunitobold"
+            android:layout_toRightOf="@id/imagelistHome"
+            android:text="Nasi Goreng Masak Matang"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:ems="15"/>
+
+
+
+        <TextView
+            android:id="@+id/txtDetailResumeQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/txtDetailResumeNamamenu"
+            android:textSize="11dp"
+            android:alpha=".7"
+            android:fontFamily="@font/nunitobold"
+            android:layout_toRightOf="@id/imagelistHome"
+            android:text="1 Pcs x 40.000 (Line DIscount: 10 %)"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:ems="15"/>
+
+
+
+
+        <TextView
+            android:id="@+id/txtDetailResumeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/txtDetailResumeQty"
+            android:textSize="20dp"
+            android:fontFamily="@font/nunitobold"
+            android:layout_toRightOf="@id/imagelistHome"
+            android:text="3,500,000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="10dp"
+            android:ems="15"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

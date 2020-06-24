@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+
+    <com.example.moobie.Function.RoundRectCornerImageView
+        android:id="@+id/ImgVal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/noimage"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/radius_outline"
+        android:layout_alignParentTop="true" />
+
+
+    <TextView
+        android:id="@+id/txtVal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/ImgVal"
+        android:ems="15"
+        android:fontFamily="@font/varelaround"
+        android:maxLength="30"
+        android:text="Nasi Goreng Amerika Dengan Saus Tomat"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ImgVal"
+        android:text="Makanan"
+        android:alpha=".6"
+        android:id="@+id/txtVal2"
+        android:layout_below="@+id/txtVal1"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/colorFullBlack"
+        android:fontFamily="@font/varelaround"
+        android:textSize="10dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVal2"
+        android:layout_toRightOf="@id/ImgVal"
+        android:text="25.000"
+        android:textSize="13dp"
+
+        android:id="@+id/txtVal3"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/txtVal4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/colorGraypol"
+        android:alpha=".4"
+        android:layout_below="@id/txtVal3">
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

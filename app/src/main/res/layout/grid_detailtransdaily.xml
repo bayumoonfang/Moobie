@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+
+    <TextView
+        android:id="@+id/txtNamaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="8"
+        android:fontFamily="@font/varelaround"
+        android:maxLength="30"
+        android:text="Nasi Goreng Italy"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/varelaround"
+        android:maxLength="30"
+        android:textStyle="bold"
+        android:id="@+id/txtTotal"
+        android:textColor="@color/colorBlack"
+        android:layout_marginRight="15dp"
+        android:textSize="12dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNamaProduk"
+        android:text="Rp 25000 x 1"
+        android:textSize="11dp"
+        android:id="@+id/txtQty"
+        android:alpha=".7"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"
+        android:layout_marginLeft="10dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNamaProduk"
+        android:text="Rp.25.000"
+        android:textSize="11dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/txtTotalJual"
+        android:alpha=".7"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/varelaround"
+        android:textColor="@color/colorFullBlack"
+        android:layout_marginLeft="10dp"></TextView>
+
+
+
+
+</RelativeLayout>

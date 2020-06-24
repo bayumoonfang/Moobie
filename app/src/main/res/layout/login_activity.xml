@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:src="@drawable/wallpaperhome"></ImageView>
+
+
+    <LinearLayout
+        android:id="@+id/loginLogoatas"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cwhite"></ImageView>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/loginLogoatas"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameForm"
+            android:theme="@style/MyTextInputLayout"
+            android:textColorHint="@color/colorWhite">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:textColorLink="@color/colorWhite"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordForm"
+            android:layout_below="@+id/usernameForm"
+            android:layout_marginTop="10dp"
+            android:theme="@style/MyTextInputLayout"
+            android:textColorHint="@color/colorWhite">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:textColorLink="@color/colorWhite"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/serverID"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/passwordForm"
+            android:theme="@style/MyTextInputLayout"
+            android:textColorHint="@color/colorWhite">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/serverVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Server"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="30dp"
+            android:height="60dp"
+            android:layout_below="@+id/serverID"
+            android:id="@+id/btnLogin">
+        </Button>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lupa Password ? Klik Disini"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

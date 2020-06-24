@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/colorWhite"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/layTophome"
+        android:background="@color/colorMyBlue"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrowleft"
+            android:alpha="1"
+            android:id="@+id/backHome"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DETAIL TRANS"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="51dp"
+            android:fontFamily="@font/nunitobold"
+            android:layout_toRightOf="@+id/backHome"
+            android:textStyle="bold"
+            android:paddingLeft="18dp"
+            android:id="@+id/txttop2"
+            android:gravity="left"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/imgClose"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/backHome"
+            android:layout_marginLeft="15dp"
+            android:ems="12"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:hint="Search Order"
+            android:textColorHint="@color/colorWhite"
+            android:id="@+id/searchform"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:visibility="gone"
+            android:background="@drawable/edt_bg_selected"
+            ></EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="14dp"
+            android:visibility="gone"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_closewhite"
+            android:id="@+id/imgClose"></ImageView>
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_filterwhite"
+
+            android:id="@+id/imgFilter"></ImageView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/layTophome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/notFound"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Not Found"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/txt1"
+            android:textSize="20dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search with other criteria"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:alpha=".8"
+            android:id="@+id/txt2"
+            android:layout_below="@+id/txt1"
+            android:textSize="15dp"></TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/layTophome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:gravity="center">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"></ProgressBar>
+    </RelativeLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layTophome"
+        android:id="@+id/layTop3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <com.example.moobie.Function.ExpandableHeightGridView
+                android:id="@+id/gridPilihan5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:numColumns="1"
+                android:verticalSpacing="5dp"
+                android:clipToPadding="false"
+                android:stretchMode="columnWidth">
+
+            </com.example.moobie.Function.ExpandableHeightGridView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

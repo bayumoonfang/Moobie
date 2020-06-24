@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/topLayout1"
+        android:elevation="4dp"
+        android:background="@drawable/border_bottom">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="14dp"
+                android:layout_margin="16dp"
+                android:alpha=".6"
+                android:src="@drawable/ic_arrowback_black" />
+        </RelativeLayout>
+
+
+        <!--android:background="#00000000"></EditText>-->
+
+        <EditText
+            android:id="@+id/txtCariJualProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_toLeftOf="@+id/layRecall1"
+            android:layout_toRightOf="@+id/layBack"
+            android:background="@drawable/rounded_edittext_abu2"
+            android:focusable="true"
+            android:fontFamily="@font/varelaround"
+            android:hint="Cari Produk..."
+            android:padding="10dp"
+            android:layout_marginTop="7dp"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/layRecall1">
+
+            <RelativeLayout
+                android:id="@+id/layClear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgClearOrder"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="18dp"
+                    android:src="@drawable/ic_abu2love" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/layClear"
+                android:id="@+id/layRecall">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="18dp"
+                    android:id="@+id/imgRecall"
+                    android:src="@drawable/ic_abu2recall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/layRecall"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="17dp"
+                    android:id="@+id/imgFilter"
+                    android:src="@drawable/ic_abu2filter" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLayout1"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        android:scrollbars="horizontal"
+        app:tabMode="fixed"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tabLayout"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:translationZ="90dp"
+        android:id="@+id/layProdukJual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.moobie.Function.ExpandableHeightGridView
+                android:id="@+id/grid_produkjualan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:numColumns="1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp">
+            </com.example.moobie.Function.ExpandableHeightGridView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorGraypol"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:translationZ="1dp"
+        android:id="@+id/layoutLoading"
+        android:visibility="gone"
+        android:elevation="10dp">
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progress_color">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_bottom"
+        android:id="@+id/topLayout1"
+        android:elevation="4dp"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/layBack">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrowback_black"
+                android:layout_margin="21dp"
+                android:id="@+id/imgBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layBack"
+            android:text="Edit Outlet"
+            android:layout_margin="16dp"
+
+            android:textSize="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:id="@+id/txtProduk"
+            android:textColor="@color/colorBlack"/>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/layHapus"
+    android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:id="@+id/hapusOutlet"
+            android:src="@drawable/ic_hapusblack"/>
+</RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:id="@+id/topLayout2"
+        android:layout_below="@+id/topLayout1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/separator"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/separator"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imgcard"
+            android:background="@drawable/edittext_fullborder_radius"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Outlet"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imgcard"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtLabel1"
+            android:fontFamily="@font/opensansregular"
+            android:textColor="@color/colorFullBlack"
+
+            android:textSize="15dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:background="@drawable/btm_borderedittext"
+            android:layout_below="@+id/txtLabel1"
+            android:textSize="13dp"
+            android:inputType="textCapWords"
+            android:hint="Nama Outlet anda.."
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtNamaOutlet"
+            android:layout_marginRight="30dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Outlet"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txtNamaOutlet"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtLabel2"
+            android:textColor="@color/colorFullBlack"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/txtLabel2"
+            android:textSize="13dp"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtAlamatOutlet"
+            android:inputType="textCapWords"
+            android:background="@drawable/btm_borderedittext"
+            android:layout_marginRight="30dp"/>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kota Outlet"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txtAlamatOutlet"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtLabel3"
+            android:textColor="@color/colorFullBlack"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/txtLabel3"
+            android:textSize="13dp"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtCityOutlet"
+            android:inputType="textCapWords"
+            android:hint="contoh : Surabaya, Jakarta, dll.."
+            android:background="@drawable/btm_borderedittext"
+            android:layout_marginRight="30dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Outlet"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txtCityOutlet"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtLabel4"
+            android:textColor="@color/colorFullBlack"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/txtLabel4"
+            android:textSize="13dp"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtPhoneOutlet"
+            android:inputType="number"
+            android:hint="contoh : 081938xxxxxx, (0311) 878xxx"
+            android:background="@drawable/btm_borderedittext"
+            android:layout_marginRight="30dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code Outlet"
+            android:fontFamily="@font/opensansregular"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txtPhoneOutlet"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtLabel5"
+            android:textColor="@color/colorFullBlack"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/txtLabel5"
+            android:textSize="13dp"
+            android:textColor="@color/colorFullBlack"
+            android:id="@+id/txtCodeOutlet"
+            android:maxLength="2"
+            android:editable="false"
+            android:background="@drawable/btm_borderedittext"
+            android:layout_marginRight="30dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtCodeOutlet"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtValKategori"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtValSatuan"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/topLayout2">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_below="@+id/txtServer"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnSimpanAddOutlet"
+            android:fontFamily="@font/nunitobold"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/radius_layoutblue"
+
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
