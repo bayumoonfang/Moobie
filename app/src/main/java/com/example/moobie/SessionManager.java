@@ -15,7 +15,7 @@ public class SessionManager {
     public SharedPreferences.Editor editor;
     public Context context;
     int PRIVATE_MODE = 0;
-
+///
     private static final String PREF_NAME = "LOGIN";
     private static final String LOGIN = "IS_LOGIN";
     public static final String USERNAME = "USERNAME";
